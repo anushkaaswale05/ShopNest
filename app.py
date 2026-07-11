@@ -312,7 +312,7 @@ for index, (_, row) in enumerate(featured.iterrows()):
             if os.path.exists(image_path):
                 st.image(
                     image_path,
-                    use_container_width=True
+                    width=220
                 )
             else:
                 st.image(
@@ -320,7 +320,14 @@ for index, (_, row) in enumerate(featured.iterrows()):
                     use_container_width=True
                 )
 
-            st.markdown(f"### {row['product_name']}")
+                st.markdown(
+    f"""
+    <div style="height:55px;font-size:20px;font-weight:bold;">
+        {product['product_name']}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
             st.write(f"🏷️ **Brand:** {row['brand']}")
             st.write(f"📂 **Category:** {row['category']}")
