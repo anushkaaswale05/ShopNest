@@ -173,7 +173,7 @@ else:
 
             st.balloons()
 
-            st.rerun()
+            
 
 st.markdown("---")
 

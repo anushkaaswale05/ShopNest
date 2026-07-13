@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
+st.balloons()
 # =====================================================
 # LOAD DATA
 # =====================================================
@@ -456,9 +456,9 @@ with st.sidebar:
 
             st.balloons()
 
-            st.session_state.cart = []
+            
 
-            st.rerun()
+            
 
 # =====================================================
 # FOOTER
