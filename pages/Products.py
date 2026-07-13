@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-st.balloons()
+
 # =====================================================
 # LOAD DATA
 # =====================================================
@@ -454,11 +454,11 @@ with st.sidebar:
 
             st.success("Order placed successfully! 🎉")
 
-            st.balloons()
+        
 
-            
+            st.session_state.cart = []
 
-            
+            st.rerun()
 
 # =====================================================
 # FOOTER
